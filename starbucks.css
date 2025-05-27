@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body{
+    height: 100%;
+
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.header{
+    padding: 20px 0;
+    height: 200px;
+}
+
+.logo{
+    width: 50%;
+}
+
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+section.sobre{
+    height: calc(100% - 104.9px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    height: 95%;
+    background-color: #017143;
+    border-top-left-radius: 100%;
+}
+
+.social-media{
+    position: absolute;
+    right: 2%;
+    margin-bottom: 2%;
+    top: 130px;
+}
+
+.social-media img{
+    display: block;
+    width: 23.5px;
+    margin: 30px 0;
+}
+
+.texto-sobre{
+    margin-top: 150px;
+}
+
+.texto-sobre h1{
+    font-size: 45px;
+}
+
+.texto-sobre p{
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 550px;
+    font-weight: initial;
+}
+
+button{
+    border: 0;
+    background-color: #017143;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.extras img:hover{
+    max-width: 320px;
+}
+
+.extras2{
+    margin-top: 20px;
+    background-color: #017143;
+    display: none;
+}
+
+@media screen and (max-width:1050px){
+    .extras{
+        display: none;
+    }
+
+    .extras2{
+        display: block;
+    }
+
+    .extras2 > img{
+        position: relative;
+        left: calc(50% - 175px);
+    }
+
+    .social-media-2{
+        text-align: center;
+
+    }
+
+    .social-media-2 a{
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:740px){
+    .menu a{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .extras2 > img{
+        position: relative;
+        left: calc(50% - 175px);
+    }
+}
